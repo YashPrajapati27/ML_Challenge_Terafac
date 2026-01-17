@@ -140,8 +140,19 @@ Observations
 
 Incremental architectural improvements consistently outperform one-shot complex designs.
 
+
 Attention mechanisms provide strong gains, while ensemble learning offers the final refinement.
 
 Performance improvements diminish at higher accuracy levels, indicating proximity to the dataset’s practical performance ceiling.
 
 The ensemble model achieves superior robustness without requiring additional labeled data.
+
+---
+
+Colab Notebooks:- 
+
+Level 1 :- https://colab.research.google.com/drive/11n7z_qA09518_MSFUWqXTAMCQOrZtGhZ?usp=sharing
+
+Level 2 :- https://colab.research.google.com/drive/1OJkua-SfBoIOogMSqV5vKL4Jae_gER1U?usp=sharing
+
+Level 3 :- https://colab.research.google.com/drive/1-xbfkXCwJ56gbdbXpgS5JcgnyYR5tn52?usp=sharing
