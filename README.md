@@ -3,17 +3,18 @@ Multi-Stage Image Classification on CIFAR-10
 
 Author: Yash
 
-📌 Project Summary
+Project Summary
 
 This project presents a structured, multi-stage approach to image classification on the CIFAR-10 dataset. Rather than applying all techniques simultaneously, the model is progressively enhanced across multiple levels. This design allows a clear understanding of how each architectural or training modification influences performance.
 
 Starting from a strong transfer-learning baseline, the pipeline evolves through data augmentation, optimization strategies, attention mechanisms, and finally ensemble learning. The focus is not only on improving accuracy, but also on maintaining reproducibility, interpretability, and experimental clarity at every stage.
 
-🎯 Problem Definition
+
+Problem Definition
 
 The goal of this project is to build a stable and high-performing image classification system for CIFAR-10. By incrementally refining the model across defined stages, the project demonstrates how thoughtful architectural choices and training strategies contribute to measurable performance gains while effectively controlling overfitting.
 
-📊 Dataset Description
+Dataset Description
 
 Dataset: CIFAR-10
 
@@ -28,7 +29,7 @@ Number of Classes: 10
 Classes:
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
 
-🔀 Dataset Splitting Strategy
+Dataset Splitting Strategy
 Original Dataset
 
 Training set: 50,000 images
@@ -45,7 +46,7 @@ Test: 10,000 images
 
 A dedicated validation set was created from the training data to monitor model performance and reduce the risk of overfitting.
 
-🧪 Methodology and Experimental Results
+Methodology and Experimental Results
 Level 1 — Transfer Learning Baseline
 
 Model: ResNet-50
@@ -84,7 +85,7 @@ Test Accuracy: 94.35%
 
 Channel-wise attention dynamically recalibrates feature responses by emphasizing informative channels and suppressing less relevant ones. This results in consistent performance improvements across most classes and represents the strongest single-model configuration.
 
-🧠 Key Takeaways
+Key Takeaways
 
 Transfer learning provides a powerful foundation even for small images.
 
@@ -94,7 +95,7 @@ Attention mechanisms further refine feature learning and enhance classification 
 
 A level-wise experimental framework makes performance improvements interpretable and reproducible.
 
-🚀 Final Performance — Ensemble Learning
+Final Performance — Ensemble Learning
 
 Final Test Accuracy: 94.72%
 
@@ -102,12 +103,12 @@ The final model utilizes an ensemble of multiple high-performing architectures. 
 
 This approach is particularly effective for visually similar CIFAR-10 classes, where single models often struggle to draw clear decision boundaries.
 
-📈 Performance Summary
+Performance Summary
 Stage	Model	Test Accuracy
 Level 1	ResNet-50 (Transfer Learning)	90.63%
 Level 2	ResNet-50 + Augmentation & Optimization	93.08%
 Level 3	SE-ResNet-50 (Channel Attention)	94.35%
-Final Level	Ensemble Model	94.72%
+
 
 Each stage introduces targeted improvements, resulting in steady and interpretable performance gains rather than abrupt changes.
 
